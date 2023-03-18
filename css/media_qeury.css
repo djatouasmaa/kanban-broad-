@@ -1,0 +1,53 @@
+/*****************************/
+/* BELOW 1200px / 16px = 75em 
+/******************************/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  section {
+    width: 30%;
+  }
+}
+/****************************************/
+/* BELOW 944px / 16px = 59em  (Tablets)*/
+/****************************************/
+@media (max-width: 59em) {
+  .container {
+    flex-direction: column;
+    row-gap: 4.4rem;
+  }
+  section {
+    width: 60%;
+  }
+
+  ::-webkit-scrollbar {
+    width: 2.8rem;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #f9fafc;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: black;
+    border: 3px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+    scrollbar-width: thin;
+  }
+}
+
+/*****************************/
+/* BELOW 704px / 16px = 44em 
+/******************************/
+@media (max-width: 44em) {
+  html {
+    font-size: 40%;
+  }
+
+  input[type='text'] {
+    width: 25%;
+  }
+}
